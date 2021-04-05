@@ -5,4 +5,5 @@ import dakteq.com.portal.dakteq_portal.model.Bank
 interface BankDataSource {
 
     fun retrieveBanks(): Collection<Bank>
+    fun retrieveBank(accountNumber: String): Bank
 }
